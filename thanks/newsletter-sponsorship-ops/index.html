@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thanks — Newsletter Sponsorship Ops Kit</title>
+  <meta name="robots" content="noindex" />
+  <meta name="description" content="Your Newsletter Sponsorship Ops Kit purchase confirmation and unlock links." />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap inner">
+      <a class="logo" href="/">alex<span>big</span>store</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="/newsletter-sponsorship-ops/">Product</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap page-narrow">
+    <div class="eyebrow">Purchase confirmed</div>
+    <h1>Thanks — here’s your Ops Kit</h1>
+    <p class="lede" style="color:var(--muted);max-width:40rem">
+      Duplicate the workspace that fits your stack, then follow the short setup below.
+      The same links are also in your purchase email (check spam if you don’t see it within a few minutes).
+    </p>
+
+    <ul class="unlock-list">
+      <li>
+        <strong>Airtable base</strong>
+        <span class="placeholder">[AIRTABLE_BASE_LINK]</span>
+        <p style="margin:0.5rem 0 0;color:var(--muted);font-size:0.92rem">Open while logged into Airtable → <strong>Copy base / Duplicate</strong> into your workspace.</p>
+      </li>
+      <li>
+        <strong>Notion template</strong>
+        <span class="placeholder">[NOTION_TEMPLATE_LINK]</span>
+        <p style="margin:0.5rem 0 0;color:var(--muted);font-size:0.92rem">Open while logged into Notion → <strong>Duplicate</strong> (top right) into your workspace.</p>
+      </li>
+    </ul>
+
+    <h2 class="section-title" style="font-size:1.25rem">Quick setup</h2>
+    <ol class="setup-ol">
+      <li>Pick <strong>Airtable or Notion</strong> (or keep both). Same concepts either way.</li>
+      <li>Confirm tables/databases exist: Sponsors, Slots, Bookings, Creatives, Invoices, Reports.</li>
+      <li>Open the calendar / slots-by-date view—that’s your inventory board.</li>
+      <li>Smoke test: add 1–2 real sponsors and one upcoming issue; link a creative checklist, set invoice status, then fill a report after send.</li>
+      <li>First-week habits: block inventory before you promise a date; set creative due ≥3 business days before send; never mark Live until assets are in; send the post-send report within 5 business days.</li>
+    </ol>
+
+    <div class="notice">
+      Full field reference and CSV import notes ship with your download (<code>delivery/README.md</code>, <code>schema.md</code>, <code>IMPORT.md</code>).
+      If a duplicate link still shows as a placeholder above, use the email attachment / ZIP and start from <code>csv/</code> + IMPORT until live templates are published.
+    </div>
+
+    <p style="margin-top:1.5rem;color:var(--muted);font-size:0.95rem">
+      This kit is for ops on sponsorships you already sell—calendar, creatives, invoice status, post-send reports.
+      It does not find sponsors or send your newsletter. Questions about duplicate access: reply to your purchase email with which tool failed and a screenshot.
+    </p>
+
+    <p style="margin-top:2rem">
+      <a class="btn btn-ghost" href="/">Back to home</a>
+      <a class="btn btn-ghost" href="mailto:xuchunsun@gmail.com?subject=Ops%20Kit%20access">Need help with access?</a>
+    </p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="compliance">Ops templates only. Not a marketplace, ESP, or sponsor-finding tool. Not affiliated with Beehiiv, Substack, Sponsy, AdSlots, or Paved.</p>
+      <p class="meta-line">© <span id="y"></span> alexbigstore</p>
+    </div>
+  </footer>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>

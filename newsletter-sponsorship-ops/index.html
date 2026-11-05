@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Newsletter Sponsorship Ops Kit | alexbigstore</title>
+  <meta name="description" content="Ops for sold sponsorships—calendar, creatives, invoices, and post-send reports. Airtable + Notion templates. $29 one-time." />
+  <link rel="stylesheet" href="/styles.css" />
+  <!-- Creem cancel path: /newsletter-sponsorship-ops?cancelled=1
+       Product: prod_36SdJc9hUzJLRF4tMED5pn — live payments need store approval. -->
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap inner">
+      <a class="logo" href="/">alex<span>big</span>store</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="/#inside">What’s inside</a>
+        <a
+          class="btn btn-primary btn-sm"
+          href="https://www.creem.io/payment/prod_36SdJc9hUzJLRF4tMED5pn"
+          data-creem-product="prod_36SdJc9hUzJLRF4tMED5pn"
+          data-payments-live="pending-approval"
+        >Get the Ops Kit — $29</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap page-narrow">
+    <div id="cancelled-banner" class="banner" role="status">
+      Checkout was cancelled—no charge. You can restart anytime when you’re ready.
+    </div>
+
+    <div class="eyebrow">Product</div>
+    <h1>Newsletter Sponsorship Ops Kit</h1>
+    <p class="lede" style="color:var(--muted)">
+      Ops for sold sponsorships—calendar, creatives, invoices, and post-send reports in one place.
+      Duplicate-ready Airtable and Notion templates for newsletters that already sell ads. Not a marketplace, not an ESP.
+    </p>
+
+    <div class="cta-row" style="margin:1.25rem 0">
+      <a
+        class="btn btn-primary"
+        href="https://www.creem.io/payment/prod_36SdJc9hUzJLRF4tMED5pn"
+        data-creem-product="prod_36SdJc9hUzJLRF4tMED5pn"
+        data-payments-live="pending-approval"
+      >Get the Ops Kit — $29</a>
+      <a class="btn btn-ghost" href="/#how">How it works</a>
+    </div>
+    <p class="cta-note">$29 one-time · setup guide included · checkout via Creem</p>
+
+    <div class="card" style="margin-top:1.75rem">
+      <h3>Includes</h3>
+      <ul class="muted-list">
+        <li>Slot / inventory calendar</li>
+        <li>Sponsor CRM</li>
+        <li>Creative / asset checklist</li>
+        <li>Invoice status tracker</li>
+        <li>Post-send report template</li>
+        <li>Buyer setup guide</li>
+      </ul>
+    </div>
+
+    <p style="margin-top:1.5rem;color:var(--muted);font-size:0.95rem">
+      Prefer the full landing story? <a href="/">See the home page</a>.
+      After payment you’ll land on the thank-you unlock page and receive the same links by email.
+    </p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="compliance">We do not find sponsors, guarantee revenue or CPM, or auto-insert newsletter content. Not affiliated with Beehiiv, Substack, Sponsy, AdSlots, or Paved.</p>
+      <p class="meta-line">© <span id="y"></span> alexbigstore · <a href="mailto:xuchunsun@gmail.com">xuchunsun@gmail.com</a></p>
+    </div>
+  </footer>
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+    (function () {
+      try {
+        var q = new URLSearchParams(window.location.search);
+        if (q.get("cancelled") === "1") {
+          var el = document.getElementById("cancelled-banner");
+          if (el) el.classList.add("show");
+        }
+      } catch (e) {}
+    })();
+  </script>
+</body>
+</html>
