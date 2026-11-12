@@ -6,6 +6,9 @@
   <title>Trade Lead First-Reply | alexbigstore</title>
   <meta name="description" content="Chrome extension for HVAC owners: one-click first reply + pricebook ballpark + 3 clarifying questions on Angi, Thumbtack, Google LSA, or HomeAdvisor lead emails in Gmail. Draft only—never auto-sends." />
   <link rel="stylesheet" href="/styles.css" />
+  <!-- Creem cancel path: /trade-lead-first-reply/?cancelled=1
+       Early Lifetime: prod_5HNCiNfPIZRA7VindKfUO0 — $49 one-time
+       Pro: prod_63CYoFC7rg551mdl43s0W5 — $19/mo -->
 </head>
 <body>
   <header class="site-header">
@@ -14,12 +17,22 @@
       <nav class="nav" aria-label="Primary">
         <a href="#how">How it works</a>
         <a href="#pricing">Pricing</a>
-        <a class="btn btn-primary btn-sm" href="#waitlist">Join the waitlist</a>
+        <a
+          class="btn btn-primary btn-sm"
+          href="https://www.creem.io/product/prod_5HNCiNfPIZRA7VindKfUO0"
+          data-creem-product="prod_5HNCiNfPIZRA7VindKfUO0"
+        >Get Early Lifetime — $49</a>
       </nav>
     </div>
   </header>
 
   <main>
+    <div class="wrap">
+      <div id="cancelled-banner" class="banner" role="status">
+        Checkout was cancelled—no charge. You can restart anytime when you’re ready.
+      </div>
+    </div>
+
     <section class="hero">
       <div class="wrap hero-grid">
         <div>
@@ -27,9 +40,18 @@
           <h1>Shared leads go to 5 pros. Average reply = 4 hours. Win the job in 30 seconds — first reply + ballpark quote, inside Gmail.</h1>
           <p class="lede">Chrome extension for HVAC owners: when Angi, Thumbtack, Google LSA, or HomeAdvisor lead mail hits Gmail, one click drafts your first reply, a pricebook-backed ballpark, and three clarifying questions—into the reply box. You review. You send. Never auto-sent.</p>
           <div class="cta-row">
-            <a class="btn btn-primary" href="#waitlist">Join the waitlist</a>
+            <a
+          class="btn btn-primary"
+          href="https://www.creem.io/product/prod_5HNCiNfPIZRA7VindKfUO0"
+          data-creem-product="prod_5HNCiNfPIZRA7VindKfUO0"
+        >Get Early Lifetime — $49</a>
+            <a
+          class="btn btn-ghost"
+          href="https://www.creem.io/product/prod_63CYoFC7rg551mdl43s0W5"
+          data-creem-product="prod_63CYoFC7rg551mdl43s0W5"
+        >Or Pro — $19/mo</a>
           </div>
-          <p class="cta-note">Purchase isn’t open yet. Planned pricing: Early Lifetime $49 one-time, or Pro $19/mo. Leave your email and we’ll notify you. Drafts go into Gmail—you always hit send.</p>
+          <p class="cta-note">$49 one-time Early Lifetime, or Pro $19/mo · license key + extension ZIP after checkout via Creem. Drafts go into Gmail—you always hit send.</p>
         </div>
         <aside class="hero-card" aria-label="Pain snapshot">
           <h3>Why shared HVAC leads slip</h3>
@@ -155,55 +177,34 @@
 
     <section id="pricing">
       <div class="wrap">
-        <h2 class="section-title">Planned pricing</h2>
-        <p class="section-sub">Purchase isn’t open yet. Planned: one-time Early Lifetime, or a monthly Pro license. No auto-send.</p>
+        <h2 class="section-title">Pricing</h2>
+        <p class="section-sub">One-time Early Lifetime, or a monthly Pro license. Checkout via Creem. No auto-send.</p>
         <div class="two-col">
           <article class="card price-box">
             <h3>Early Lifetime</h3>
             <p class="amount">$49 <small>one-time license</small></p>
-            <p>Lifetime access to Trade Lead First-Reply as shipped for Early buyers, when purchase opens. License key + install ZIP at that time.</p>
+            <p>Lifetime access to Trade Lead First-Reply as shipped for Early buyers. License key + install ZIP after checkout.</p>
             <p style="margin-top:1rem">
-              <a class="btn btn-primary" href="#waitlist">Join the waitlist</a>
+              <a
+          class="btn btn-primary"
+          href="https://www.creem.io/product/prod_5HNCiNfPIZRA7VindKfUO0"
+          data-creem-product="prod_5HNCiNfPIZRA7VindKfUO0"
+        >Get Early Lifetime — $49</a>
             </p>
           </article>
           <article class="card">
             <h3>Pro</h3>
             <p class="amount" style="font-size:1.5rem">$19 <small>/ month</small></p>
-            <p>Monthly subscription license for the same Gmail drafting workflow, when purchase opens.</p>
+            <p>Monthly subscription license for the same Gmail drafting workflow.</p>
             <p style="margin-top:1rem">
-              <a class="btn btn-ghost" href="#waitlist">Join the waitlist</a>
+              <a
+          class="btn btn-ghost"
+          href="https://www.creem.io/product/prod_63CYoFC7rg551mdl43s0W5"
+          data-creem-product="prod_63CYoFC7rg551mdl43s0W5"
+        >Get Pro — $19/mo</a>
             </p>
           </article>
         </div>
-      </div>
-    </section>
-
-
-    <section id="waitlist">
-      <div class="wrap">
-        <h2 class="section-title">Get notified</h2>
-        <p class="section-sub">Purchase isn’t open yet. Leave your email and we’ll tell you when it is. Planned pricing: Early Lifetime $49 one-time, or Pro $19/mo. No payment is taken here.</p>
-        <article class="card">
-          <div id="wl-form-wrap">
-            <form id="wl-form">
-              <p>
-                <label>Email<br />
-                  <input id="wl-email" name="email" type="email" required autocomplete="email" placeholder="you@yourhvacco.com" style="width:100%;max-width:24rem" />
-                </label>
-              </p>
-              <p>
-                <label>Company (optional)<br />
-                  <input id="wl-company" name="company" type="text" autocomplete="organization" placeholder="Your HVAC company" style="width:100%;max-width:24rem" />
-                </label>
-              </p>
-              <p><button type="submit" class="btn btn-primary">Join the waitlist</button></p>
-              <p class="cta-note">Saved only in this browser. No payment, and no checkout link.</p>
-            </form>
-          </div>
-          <div id="wl-success" hidden tabindex="-1">
-            <p><strong>You’re on the list.</strong> We’ll email you when purchase opens. No payment was taken.</p>
-          </div>
-        </article>
       </div>
     </section>
 
@@ -237,7 +238,7 @@
         </details>
         <details>
           <summary>How do I install it after paying?</summary>
-          <p>When purchase opens, you’ll get a license key and the extension ZIP. Unzip, open chrome://extensions, turn on Developer mode, Load unpacked, then paste the key in Options. Full steps will be in INSTALL.md inside the ZIP.</p>
+          <p>After checkout you’ll get a license key and the extension ZIP (also in your receipt email and Creem customer portal). Unzip, open chrome://extensions, turn on Developer mode, Load unpacked, then paste the key in Options. Full steps are on the thank-you page and in INSTALL.md inside the ZIP.</p>
         </details>
         <details>
           <summary>Refunds?</summary>
@@ -252,43 +253,28 @@
       <div class="footer-cta">
         <div>
           <h2>Shared leads won’t wait.</h2>
-          <p>Purchase isn’t open yet. Join the waitlist to get notified.</p>
+          <p>Get the Gmail first-reply draft extension. License key + install ZIP after checkout.</p>
         </div>
-        <a class="btn btn-primary" href="#waitlist">Join the waitlist</a>
+        <a
+          class="btn btn-primary"
+          href="https://www.creem.io/product/prod_5HNCiNfPIZRA7VindKfUO0"
+          data-creem-product="prod_5HNCiNfPIZRA7VindKfUO0"
+        >Get Early Lifetime — $49</a>
       </div>
-      <p class="compliance">Chrome extension for Gmail lead drafts only. Never auto-sends. Does not scrape Angi, Thumbtack, Google LSA, or HomeAdvisor pages to message leads. No guaranteed win rate, lead volume, or booked jobs. Not affiliated with, endorsed by, or sponsored by Angi, Thumbtack, Google, or HomeAdvisor. Purchase is not open. When it is, delivery will be a license key + extension ZIP (Developer-mode install until Chrome Web Store listing).</p>
+      <p class="compliance">Chrome extension for Gmail lead drafts only. Never auto-sends. Does not scrape Angi, Thumbtack, Google LSA, or HomeAdvisor pages to message leads. No guaranteed win rate, lead volume, or booked jobs. Not affiliated with, endorsed by, or sponsored by Angi, Thumbtack, Google, or HomeAdvisor. Delivery is a license key + extension ZIP (Developer-mode install until Chrome Web Store listing).</p>
       <p class="meta-line">© <span id="y"></span> alexbigstore · <a href="/trade-lead-first-reply/">Product page</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="mailto:xuchunsun@gmail.com">xuchunsun@gmail.com</a></p>
     </div>
   </footer>
   <script>
     document.getElementById("y").textContent = new Date().getFullYear();
     (function () {
-      var KEY = "tlfr-waitlist";
-      var form = document.getElementById("wl-form");
-      var emailEl = document.getElementById("wl-email");
-      var companyEl = document.getElementById("wl-company");
-      var wrap = document.getElementById("wl-form-wrap");
-      var success = document.getElementById("wl-success");
-      if (!form) return;
       try {
-        if (localStorage.getItem(KEY)) {
-          wrap.hidden = true;
-          success.hidden = false;
+        var q = new URLSearchParams(window.location.search);
+        if (q.get("cancelled") === "1") {
+          var el = document.getElementById("cancelled-banner");
+          if (el) el.classList.add("show");
         }
       } catch (e) {}
-      form.addEventListener("submit", function (ev) {
-        ev.preventDefault();
-        var email = (emailEl.value || "").trim();
-        if (!email || email.indexOf("@") < 1) {
-          emailEl.focus();
-          return;
-        }
-        var row = { email: email, company: (companyEl.value || "").trim(), at: new Date().toISOString() };
-        try { localStorage.setItem(KEY, JSON.stringify(row)); } catch (e) {}
-        wrap.hidden = true;
-        success.hidden = false;
-        success.focus();
-      });
     })();
   </script>
 </body>
