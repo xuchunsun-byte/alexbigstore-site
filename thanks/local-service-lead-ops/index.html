@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thanks — Local Service Lead Ops Pack</title>
+  <meta name="robots" content="noindex" />
+  <meta name="description" content="Your Local Service Lead Ops Pack purchase confirmation. The ZIP is sent to your email." />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap inner">
+      <a class="logo" href="/">alex<span>big</span>store</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="/local-service-lead-ops/">Product</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap page-narrow">
+    <div class="eyebrow">After payment</div>
+    <h1>Thanks — check your email for the pack</h1>
+    <p class="lede" style="color:var(--muted);max-width:40rem">
+      If your payment went through, the ZIP download link is sent to the email you used at checkout.
+      Check spam if you don’t see it within a few minutes. This page does not host a public download, so the file isn’t open to anyone with the URL.
+    </p>
+
+    <div class="notice">
+      Checkout is still being connected, so if you arrived here without a purchase email, nothing has been charged and no file is waiting. When checkout is live, you’ll also get the same ZIP link in that email.
+    </div>
+
+    <h2 class="section-title" style="font-size:1.25rem">After you download</h2>
+    <ol class="setup-ol">
+      <li>Open the ZIP and start with <code>README.md</code> and <code>SETUP.md</code>.</li>
+      <li>Import the three n8n workflows (Cloud or self-hosted).</li>
+      <li>Connect your own Google Sheets, Twilio and/or SMTP credentials—we don’t host n8n or store your API keys.</li>
+      <li>Run the go-live checklist before turning on live SMS.</li>
+    </ol>
+
+    <p style="margin-top:1.5rem;color:var(--muted);font-size:0.95rem">
+      This pack automates response, follow-up, and deposit reminders for leads you already get. It does not guarantee more leads, fewer no-shows, or any revenue result.
+    </p>
+
+    <p style="margin-top:2rem">
+      <a class="btn btn-ghost" href="/local-service-lead-ops/">Back to the product page</a>
+      <a class="btn btn-ghost" href="mailto:xuchunsun@gmail.com?subject=Lead%20Ops%20Pack%20access">Need help with the download?</a>
+    </p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="compliance">Automation templates only. No guaranteed appointments, revenue, or lead volume. Not affiliated with Jobber, Housecall Pro, or n8n GmbH.</p>
+      <p class="meta-line">© <span id="y"></span> alexbigstore · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="mailto:xuchunsun@gmail.com">xuchunsun@gmail.com</a></p>
+    </div>
+  </footer>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
